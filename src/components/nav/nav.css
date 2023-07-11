@@ -1,0 +1,119 @@
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 200;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+    padding: 0.5rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.header.scrolled {
+    background-color: white;
+    opacity: 0.98;
+}
+
+.nav {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+.nav a {
+    color: whitesmoke;
+    transition: all 0.4s ease-in-out;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav a:hover,
+.nav a:focus {
+    background-color: whitesmoke;
+    color: #414f6b;
+}
+
+.header.header.scrolled .nav a {
+    color: #414f6b;
+}
+
+
+.header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .nav-headings {
+    margin: 0;
+    margin-left: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.header .nav-heading-2 {
+    color: #414f6b;
+}
+
+.header .nav-heading-1 {
+    color: #4d4d4d;
+}
+
+.header .nav-heading {
+    padding: 0;
+    margin: -5px;
+    letter-spacing: 1px;
+}
+
+.header.scrolled .nav-headings {
+    opacity: 1;
+}
+
+.menu-icon-open {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+}
+
+.menu-icon-open:hover,
+.menu-icon-open:active {
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.mobile-header {
+    position: fixed;
+    z-index: 199;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+
+}
+
+.mobile-header .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 4rem;
+}
+
+.mobile-nav a {
+    color: #414f6b;
+    margin: 10px;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a:focus {
+    color:#4d4d4d;
+}
+
+
+
+
